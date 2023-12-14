@@ -1,16 +1,3 @@
-.projects {
-  margin-bottom: 16rem;
-  scroll-margin-top: 15rem;
-}
-
-.projects .projects__content {
-
-  max-width: 56rem;
-  text-align: center;
-  margin: 0 auto 6rem;
-}
-
-
 .projects ul li {
   display: flex;
   justify-content: space-between;
@@ -19,11 +6,37 @@
 }
 
 .projects ul li.projects__reversed-list {
-  flex-direction: row-reverse;
+  flex-direction: row;
+  display: flex;
+}
+
+.projects ul li.projects__reversed-list img {
+  border-radius: 100px;
+  padding: 50px;
+}
+
+.projects ul li.projects__reversed-list #img1 {
+  margin-right: 4rem;
+}
+
+.projects ul li.projects__reversed-list #img2 {
+  margin-left: 4rem;
 }
 
 .projects ul li:not(:last-of-type) {
   margin-bottom: 12rem;
+}
+.projects.max-width{
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  
+}
+
+.projects ul li .image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projects ul li .image img {
@@ -33,12 +46,18 @@
   height: auto;
 }
 
+.projects__info{
+display: flex;
+flex-direction: column;
+align-items:first baseline;
+}
+
 .projects ul li .projects__info {
-  max-width: 47rem;
+  max-width: 70rem;
 }
 
 .projects ul li .projects__info p {
-  margin: 1rem 0 4rem;
+  margin: 1rem 0 4rem 4rem; /* Ajusta as margens para colocar o texto à direita da lista */
 }
 
 .projects ul li .projects__info a {
